@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор 3D моделей - 3DGen</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/generator.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>3DGen</h1>
+                <span>Превращаем изображения в 3D</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="generator.html">Генератор</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="login.html" class="login-btn">Войти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="generator-section">
+            <div class="container">
+                <div class="generator-header">
+                    <h2>Создайте свою 3D модель</h2>
+                    <p>Загрузите 2D изображение и получите 3D модель в формате OBJ</p>
+                </div>
+
+                <div class="generator-container">
+                    <div class="upload-area">
+                        <div class="upload-box">
+                            <div class="upload-icon">📁</div>
+                            <h3>Выберите изображение</h3>
+                            <p>или перетащите файл</p>
+                            <form>
+                                <label for="fileInput" class="btn primary file-input-label">
+                                    Выберите файл
+                                </label>
+                                <input type="file" id="fileInput" accept="image/*" class="file-input">
+                            </form>
+                            <div class="file-info">
+                                <p>Поддерживаемые форматы: JPG, PNG, JPEG</p>
+                                <p>Максимальный размер: 10MB</p>
+                            </div>
+                        </div>
+
+                        <div class="preview-area">
+                            <div class="preview-placeholder">
+                                <div class="preview-icon">🖼️</div>
+                                <p>Здесь появится ваше изображение</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="controls">
+                        <div class="control-group">
+                            <label for="quality">Качество модели:</label>
+                            <select id="quality">
+                                <option value="low">Низкое (быстрее)</option>
+                                <option value="medium" selected>Среднее</option>
+                                <option value="high">Высокое (дольше)</option>
+                            </select>
+                        </div>
+
+                        <div class="control-group">
+                            <label for="format">Формат вывода:</label>
+                            <select id="format">
+                                <option value="obj" selected>OBJ</option>
+                                <option value="stl">STL</option>
+                                <option value="fbx">FBX</option>
+                            </select>
+                        </div>
+
+                        <button class="btn primary generate-btn">
+                            🚀 Сгенерировать 3D модель
+                        </button>
+                    </div>
+                </div>
+
+                <div class="result-area">
+                    <div class="result-header">
+                        <h3>Пример готовой 3D модели</h3>
+                        <p>Так будет выглядеть результат после генерации</p>
+                    </div>
+
+                    <div class="result-content">
+                        <div class="model-viewer">
+                            <div class="model-placeholder">
+                                <div class="model-image-container">
+                                    <img src="../images/my_image.jpg" alt="Пример 3D модели" class="model-example-image">
+                                </div>
+                                <p>Пример 3D модели на основе вашего изображения</p>
+                            </div>
+                        </div>
+
+                        <div class="model-info">
+                            <div class="info-card">
+                                <h4>Информация о модели</h4>
+                                <div class="info-item">
+                                    <span>Вершин:</span>
+                                    <span>1,247</span>
+                                </div>
+                                <div class="info-item">
+                                    <span>Полигонов:</span>
+                                    <span>2,384</span>
+                                </div>
+                                <div class="info-item">
+                                    <span>Размер файла:</span>
+                                    <span>2.3 MB</span>
+                                </div>
+                                <div class="info-item">
+                                    <span>Время генерации:</span>
+                                    <span>23 секунды</span>
+                                </div>
+                            </div>
+
+                            <div class="action-buttons">
+                                <a href="#" class="btn primary" download="model.obj">
+                                    📥 Скачать OBJ
+                                </a>
+                                <button class="btn secondary">
+                                    🔄 Сгенерировать снова
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>3DGen</h3>
+                    <p>Генератор 3D моделей на основе нейросетей</p>
+                </div>
+                <div class="footer-links">
+                    <a href="gallery.html">Галерея</a>
+                    <a href="login.html">Войти</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Делаем Диплом. 2025. Жиляев Максим. ДЕЛАЕМ ДЕЛАЕМ КОГДА НЕ ДЕЛАЛИ</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

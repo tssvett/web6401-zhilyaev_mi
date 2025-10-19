@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3DGen - Генератор 3D моделей</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>3DGen</h1>
+                <span>Превращаем изображения в 3D</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="generator.html">Генератор</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="login.html" class="login-btn">Войти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Превратите ваши 2D изображения в 3D модели</h2>
+                    <p>Используйте нейросетевые алгоритмы для создания трехмерных моделей в один клик</p>
+                    <div class="hero-buttons">
+                        <a href="generator.html" class="btn primary">Начать генерацию</a>
+                        <a href="gallery.html" class="btn secondary">Смотреть примеры</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="placeholder-3d">
+                        <div class="cube">
+                            <div class="face front"></div>
+                            <div class="face back"></div>
+                            <div class="face left"></div>
+                            <div class="face right"></div>
+                            <div class="face top"></div>
+                            <div class="face bottom"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2>Почему выбирают 3DGen?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Быстрая генерация</h3>
+                        <p>Получите 3D модель всего за несколько минут</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Высокая точность</h3>
+                        <p>Нейросеть точно воссоздает геометрию объектов</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔄</div>
+                        <h3>Простой интерфейс</h3>
+                        <p>Drag-and-drop загрузка и интуитивное управление</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-it-works">
+            <div class="container">
+                <h2>Как это работает?</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Загрузите изображение</h3>
+                        <p>Перетащите 2D изображение в специальную область</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Обработка нейросетью</h3>
+                        <p>Наш алгоритм анализирует изображение и создает 3D модель</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Получите результат</h3>
+                        <p>Скачайте готовую модель в формате OBJ</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Новая секция с таблицей -->
+        <section class="comparison-section">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 2rem;">Сравнение тарифных планов</h2>
+                <p style="text-align: center; margin-bottom: 2rem; color: #666;">
+                    Выберите подходящий вариант для ваших потребностей в создании 3D моделей
+                </p>
+                
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th class="align-left">Функция / Тариф</th>
+                            <th class="align-center">Бесплатный</th>
+                            <th class="align-center">Про</th>
+                            <th class="align-center">Премиум</th>
+                            <th class="align-center">Бизнес</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="align-left">Количество генераций в месяц</td>
+                            <td class="align-center">5</td>
+                            <td class="align-center">50</td>
+                            <td class="align-center">200</td>
+                            <td class="align-center">Безлимитно</td>
+                        </tr>
+                        <tr>
+                            <td class="align-left">Максимальное качество</td>
+                            <td class="align-center">Среднее</td>
+                            <td class="align-center">Высокое</td>
+                            <td class="align-center">Ультра</td>
+                            <td class="align-center">Ультра HD</td>
+                        </tr>
+                        <tr>
+                            <td class="align-left">Поддерживаемые форматы</td>
+                            <td class="align-center">OBJ</td>
+                            <td class="align-center">OBJ, STL</td>
+                            <td class="align-center">OBJ, STL, FBX</td>
+                            <td class="align-center">Все форматы</td>
+                        </tr>
+                        <tr>
+                            <td class="align-left">Приоритетная обработка</td>
+                            <td class="align-center status-inactive">❌</td>
+                            <td class="align-center status-active">✅</td>
+                            <td class="align-center status-active">✅</td>
+                            <td class="align-center status-active">✅</td>
+                        </tr>
+                        <tr>
+                            <td class="align-left">Техническая поддержка</td>
+                            <td class="align-center">Базовая</td>
+                            <td class="align-center">Приоритетная</td>
+                            <td class="align-center">24/7</td>
+                            <td class="align-center">Персональный менеджер</td>
+                        </tr>
+                        <tr>
+                            <td class="align-left">Стоимость в месяц</td>
+                            <td class="align-center price">Бесплатно</td>
+                            <td class="align-right price">$9.99</td>
+                            <td class="align-right price">$29.99</td>
+                            <td class="align-right price">$99.99</td>
+                        </tr>
+                        <tr>
+                            <td class="align-left">Годовая экономия</td>
+                            <td class="align-center">-</td>
+                            <td class="align-right">$19.88</td>
+                            <td class="align-right">$59.88</td>
+                            <td class="align-right">$199.88</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>3DGen</h3>
+                    <p>Генератор 3D моделей на основе нейросетей</p>
+                </div>
+                <div class="footer-links">
+                    <a href="gallery.html">Галерея</a>
+                    <a href="login.html">Войти</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Делаем Диплом. 2025. Жиляев Максим. ДЕЛАЕМ ДЕЛАЕМ КОГДА НЕ ДЕЛАЛИ</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
