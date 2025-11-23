@@ -1,0 +1,452 @@
+:root {
+    /* Основные цвета */
+    --primary-yellow: #FFD700;
+    --secondary-yellow: #FFC107;
+    --dark-yellow: #FFB300;
+    --light-yellow: #FFF9C4;
+    --lighter-yellow: #FFECB3;
+    
+    /* Текст */
+    --text-dark: #333;
+    --text-gray: #666;
+    --text-light: #999;
+    
+    /* Фоны */
+    --bg-light: #FFF9C4;
+    --bg-white: #ffffff;
+    --bg-dark: #333;
+    
+    /* Тени */
+    --shadow-light: rgba(255, 179, 0, 0.2);
+    --shadow-medium: rgba(255, 179, 0, 0.3);
+    --shadow-dark: rgba(0, 0, 0, 0.1);
+    
+    /* Границы */
+    --border-light: #FFECB3;
+    --border-medium: #FFD700;
+}
+
+/* Блок: login */
+.login {
+    padding: 2rem 0;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, var(--light-yellow), var(--lighter-yellow));
+}
+
+.login__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Блок: login-form */
+.login-form {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px var(--shadow-light);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.login-form__header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.login-form__title {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+    text-shadow: 1px 1px 2px var(--shadow-dark);
+}
+
+.login-form__subtitle {
+    color: var(--text-gray);
+    font-size: 1.1rem;
+}
+
+.login-form__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+/* Блок: form-group */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+}
+
+.form-group__label {
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    font-size: 1rem;
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.form-group__input {
+    padding: 1rem 1.2rem;
+    border: 2px solid var(--border-light);
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 8px var(--shadow-light);
+    font-family: inherit;
+}
+
+.form-group__input:focus {
+    outline: none;
+    border-color: var(--border-medium);
+    box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.2), 0 4px 12px var(--shadow-medium);
+    background: white;
+    transform: translateY(-1px);
+}
+
+.form-group__input::placeholder {
+    color: var(--text-light);
+    opacity: 0.7;
+}
+
+.form-group__input:hover {
+    border-color: var(--primary-yellow);
+}
+
+/* Блок: form-options */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+}
+
+/* Блок: checkbox - ИСПРАВЛЕННАЯ ВЕРСИЯ */
+.checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: var(--text-gray);
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.checkbox:hover {
+    color: var(--text-dark);
+}
+
+.checkbox__input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkbox__checkmark {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--border-light);
+    border-radius: 5px;
+    margin-right: 0.8rem;
+    position: relative;
+    transition: all 0.3s ease;
+    background: white;
+    box-shadow: 0 2px 5px var(--shadow-light);
+    flex-shrink: 0;
+}
+
+.checkbox:hover .checkbox__checkmark {
+    border-color: var(--primary-yellow);
+    box-shadow: 0 2px 8px var(--shadow-medium);
+}
+
+.checkbox__input:checked + .checkbox__checkmark {
+    background: linear-gradient(135deg, var(--primary-yellow), var(--secondary-yellow));
+    border-color: var(--primary-yellow);
+    box-shadow: 0 2px 8px var(--shadow-medium);
+}
+
+.checkbox__input:checked + .checkbox__checkmark::after {
+    content: '✓';
+    position: absolute;
+    color: var(--text-dark);
+    font-size: 14px;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0.5px 0.5px 1px rgba(255, 255, 255, 0.5);
+}
+
+/* Блок: link */
+.link {
+    color: var(--primary-yellow);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    position: relative;
+}
+
+.link:hover {
+    color: var(--secondary-yellow);
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.link--forgot {
+    font-size: 0.95rem;
+}
+
+.link--register {
+    font-weight: 700;
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background: var(--primary-yellow);
+    transition: width 0.3s ease;
+}
+
+.link:hover::after {
+    width: 100%;
+}
+
+/* Кнопка */
+.btn {
+    padding: 1.2rem 2rem;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    box-shadow: 0 4px 15px var(--shadow-dark);
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: inherit;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn--primary {
+    background: linear-gradient(135deg, var(--primary-yellow), var(--secondary-yellow));
+    color: var(--text-dark);
+    text-shadow: 0.5px 0.5px 1px rgba(255, 255, 255, 0.5);
+}
+
+.btn--primary:hover {
+    background: linear-gradient(135deg, var(--secondary-yellow), var(--dark-yellow));
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px var(--shadow-medium);
+}
+
+.btn--primary:active {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 10px var(--shadow-light);
+}
+
+.btn--full {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.login-form__footer {
+    text-align: center;
+    color: var(--text-gray);
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-light);
+}
+
+/* Блок: login-benefits */
+.login-benefits {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px var(--shadow-light);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.login-benefits__title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--text-dark);
+    font-size: 1.8rem;
+    text-shadow: 1px 1px 2px var(--shadow-dark);
+}
+
+.login-benefits__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.2rem;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, rgba(255, 248, 225, 0.7), rgba(255, 236, 179, 0.5));
+    border-radius: 15px;
+    border: 1px solid var(--border-light);
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px var(--shadow-light);
+}
+
+.login-benefits__item:hover {
+    transform: translateX(8px);
+    box-shadow: 0 4px 15px var(--shadow-medium);
+    background: linear-gradient(135deg, rgba(255, 248, 225, 0.9), rgba(255, 236, 179, 0.7));
+}
+
+.login-benefits__icon {
+    font-size: 2.2rem;
+    flex-shrink: 0;
+    background: linear-gradient(135deg, var(--primary-yellow), var(--secondary-yellow));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.1));
+}
+
+.login-benefits__text-title {
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.login-benefits__text-description {
+    color: var(--text-gray);
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Анимации */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.login-form,
+.login-benefits {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.login-benefits__item:nth-child(1) { animation-delay: 0.1s; }
+.login-benefits__item:nth-child(2) { animation-delay: 0.2s; }
+.login-benefits__item:nth-child(3) { animation-delay: 0.3s; }
+.login-benefits__item:nth-child(4) { animation-delay: 0.4s; }
+
+/* Адаптивность */
+@media (max-width: 968px) {
+    .login__container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .login-form,
+    .login-benefits {
+        padding: 2rem;
+    }
+    
+    .login-form__title {
+        font-size: 2rem;
+    }
+    
+    .form-options {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-form,
+    .login-benefits {
+        padding: 1.5rem;
+    }
+    
+    .login-form__title {
+        font-size: 1.8rem;
+    }
+    
+    .login-benefits__item {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.8rem;
+        padding: 1.2rem;
+    }
+    
+    .login-benefits__icon {
+        font-size: 1.8rem;
+    }
+    
+    .form-group__input {
+        padding: 0.9rem 1rem;
+    }
+    
+    .btn {
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+    .checkbox {
+        font-size: 0.9rem;
+    }
+    
+    .checkbox__checkmark {
+        width: 18px;
+        height: 18px;
+        margin-right: 0.6rem;
+    }
+}
+
+.form-group__hint {
+    font-size: 0.9rem;
+    color: var(--text-gray);
+    margin-top: 0.5rem;
+    line-height: 1.4;
+}
+
+.login .login__container {
+    max-width: 1000px;
+}
+
+.login-form {
+    flex: 1;
+    min-width: 400px;
+}
+
+.login-benefits {
+    flex: 1;
+    min-width: 300px;
+}
+
+@media (max-width: 768px) {
+    .login__container {
+        flex-direction: column;
+    }
+    
+    .login-form,
+    .login-benefits {
+        min-width: 100%;
+    }
+}
