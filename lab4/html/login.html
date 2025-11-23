@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход - 3DGen</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body class="page">
+    <header class="header">
+        <div class="container header__container">
+            <div class="logo">
+                <h1 class="logo__title">3DGen</h1>
+                <span class="logo__subtitle">Превращаем изображения в 3D</span>
+            </div>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Главная</a></li>
+                    <li><a href="generator.html" class="nav__link">Генератор</a></li>
+                    <li><a href="gallery.html" class="nav__link">Галерея</a></li>
+                    <li><a href="login.html" class="nav__link nav__link--login nav__link--active">Войти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="login">
+            <div class="container">
+                <div class="login__container">
+                    <div class="login-form">
+                        <div class="login-form__header">
+                            <h2 class="login-form__title">Вход в систему</h2>
+                            <p class="login-form__subtitle">Введите ваши учетные данные</p>
+                        </div>
+
+                        <form class="login-form__form">
+                            <div class="form-group">
+                                <label for="email" class="form-group__label">Email адрес</label>
+                                <input type="email" id="email" name="email" class="form-group__input" placeholder="your@email.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="password" class="form-group__label">Пароль</label>
+                                <input type="password" id="password" name="password" class="form-group__input" placeholder="Введите ваш пароль" required>
+                            </div>
+
+                            <div class="form-options">
+                                <label class="checkbox">
+                                    <input type="checkbox" name="remember" class="checkbox__input">
+                                    <span class="checkbox__checkmark"></span>
+                                    Запомнить меня
+                                </label>
+                                <a href="#" class="link link--forgot">Забыли пароль?</a>
+                            </div>
+
+                            <button type="submit" class="btn btn--primary btn--full">
+                                Войти в аккаунт
+                            </button>
+                        </form>
+
+                        <div class="login-form__footer">
+                            <p>Еще нет аккаунта? <a href="register.html" class="link link--register">Зарегистрироваться</a></p>
+                        </div>
+                    </div>
+
+                    <div class="login-benefits">
+                        <div class="benefits-list">
+                            <h3 class="login-benefits__title">Преимущества авторизации</h3>
+                            <div class="login-benefits__item">
+                                <div class="login-benefits__icon">☠︎</div>
+                                <div class="login-benefits__text">
+                                    <h4 class="login-benefits__text-title">Вы знаете кто вы!</h4>
+                                    <p class="login-benefits__text-description">И зачем это нужно?</p>
+                                </div>
+                            </div>
+                            <div class="login-benefits__item">
+                                <div class="login-benefits__icon">🛠️</div>
+                                <div class="login-benefits__text">
+                                    <h4 class="login-benefits__text-title">Генератор работает</h4>
+                                    <p class="login-benefits__text-description">Я серьезно, без авторизации не работает</p>
+                                </div>
+                            </div>
+                            <div class="login-benefits__item">
+                                <div class="login-benefits__icon">🎁</div>
+                                <div class="login-benefits__text">
+                                    <h4 class="login-benefits__text-title">Жиляев Максим обворует вас БЕСПЛАТНО!</h4>
+                                    <p class="login-benefits__text-description">Персональная инфа бесплатной не бывает</p>
+                                </div>
+                            </div>
+                            <div class="login-benefits__item">
+                                <div class="login-benefits__icon">🚨</div>
+                                <div class="login-benefits__text">
+                                    <h4 class="login-benefits__text-title">Регистрируетесь только ОДИН РАЗ!</h4>
+                                    <p class="login-benefits__text-description">Да, вы не ослышались</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer-logo">
+                    <h3 class="footer__logo-title">3DGen</h3>
+                    <p class="footer__logo-description">Генератор 3D моделей на основе нейросетей</p>
+                </div>
+                <div class="footer__links">
+                    <a href="gallery.html" class="footer__link">Галерея</a>
+                    <a href="login.html" class="footer__link">Войти</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>Делаем Диплом. 2025. Жиляев Максим. ДЕЛАЕМ ДЕЛАЕМ КОГДА НЕ ДЕЛАЛИ</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    // Класс для хранения данных пользователя
+    class UserLogin {
+        constructor(email, password, rememberMe) {
+            this.email = email;
+            this.password = password;
+            this.rememberMe = rememberMe;
+            this.loginTime = new Date().toISOString();
+        }
+
+        // Метод форматированного вывода в консоль
+        printToConsole() {
+            console.log('======= ДАННЫЕ ВХОДА =======');
+            console.log(`📧 Email: ${this.email}`);
+            console.log(`🔒 Пароль: ${this.password.replace(/./g, '*')}`);
+            console.log(`💾 Запомнить: ${this.rememberMe ? 'Да' : 'Нет'}`);
+            console.log(`⏰ Время: ${new Date(this.loginTime).toLocaleString('ru-RU')}`);
+            console.log('============================');
+        }
+
+        // Дополнительный метод для валидации
+        validate() {
+            const errors = [];
+            
+            if (!this.email) {
+                errors.push('Email обязателен');
+            } else if (!this.email.includes('@')) {
+                errors.push('Некорректный email');
+            }
+            
+            if (!this.password) {
+                errors.push('Пароль обязателен');
+            } else if (this.password.length < 6) {
+                errors.push('Пароль должен быть не менее 6 символов');
+            }
+            
+            return errors;
+        }
+    }
+
+    // Обработчик формы входа
+    document.addEventListener('DOMContentLoaded', function() {
+        const loginForm = document.querySelector('.login-form__form');
+        
+        if (loginForm) {
+            loginForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Получаем данные из формы
+                const email = document.getElementById('email').value;
+                const password = document.getElementById('password').value;
+                const rememberMe = document.querySelector('input[name="remember"]').checked;
+                
+                // Создаем объект пользователя
+                const user = new UserLogin(email, password, rememberMe);
+                
+                // Валидация
+                const errors = user.validate();
+                if (errors.length > 0) {
+                    alert('Ошибки:\n' + errors.join('\n'));
+                    return;
+                }
+                
+                // Выводим в консоль
+                user.printToConsole();
+                
+                // Показываем уведомление
+                showNotification('✅ Данные успешно обработаны! Проверьте консоль браузера.', 'success');
+                
+                // Очищаем форму (опционально)
+                // loginForm.reset();
+            });
+        }
+        
+        // Функция для показа уведомлений
+        function showNotification(message, type = 'info') {
+            // Создаем элемент уведомления
+            const notification = document.createElement('div');
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                padding: 15px 20px;
+                border-radius: 10px;
+                color: white;
+                font-weight: bold;
+                z-index: 10000;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+                transform: translateX(400px);
+                transition: transform 0.3s ease;
+                max-width: 300px;
+            `;
+            
+            // Устанавливаем цвет в зависимости от типа
+            if (type === 'success') {
+                notification.style.background = 'linear-gradient(135deg, #4CAF50, #45a049)';
+            } else if (type === 'error') {
+                notification.style.background = 'linear-gradient(135deg, #f44336, #d32f2f)';
+            } else {
+                notification.style.background = 'linear-gradient(135deg, #2196F3, #1976D2)';
+            }
+            
+            notification.textContent = message;
+            document.body.appendChild(notification);
+            
+            // Анимация появления
+            setTimeout(() => {
+                notification.style.transform = 'translateX(0)';
+            }, 100);
+            
+            // Автоматическое скрытие через 5 секунд
+            setTimeout(() => {
+                notification.style.transform = 'translateX(400px)';
+                setTimeout(() => {
+                    if (notification.parentNode) {
+                        notification.parentNode.removeChild(notification);
+                    }
+                }, 300);
+            }, 5000);
+        }
+    });
+    </script>
+</body>
+</html>
