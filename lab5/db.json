@@ -1,0 +1,60 @@
+{
+  "/plans": {
+    "get": {
+      "data": [
+        {
+          "id": 1,
+          "name": "Бесплатный",
+          "generations": 5,
+          "quality": "Среднее",
+          "formats": ["OBJ"],
+          "priority": false,
+          "support": "Базовая",
+          "price": "Бесплатно",
+          "yearlySave": "-"
+        },
+        {
+          "id": 2,
+          "name": "Про",
+          "generations": 50,
+          "quality": "Высокое",
+          "formats": ["OBJ", "STL"],
+          "priority": true,
+          "support": "Приоритетная",
+          "price": "$9.99",
+          "yearlySave": "$19.88"
+        },
+        {
+          "id": 3,
+          "name": "Премиум",
+          "generations": 200,
+          "quality": "Ультра",
+          "formats": ["OBJ", "STL", "FBX"],
+          "priority": true,
+          "support": "24/7",
+          "price": "$29.99",
+          "yearlySave": "$59.88"
+        },
+        {
+          "id": 4,
+          "name": "Бизнес",
+          "generations": "Безлимитно",
+          "quality": "Ультра HD",
+          "formats": ["Все форматы"],
+          "priority": true,
+          "support": "Персональный менеджер",
+          "price": "$99.99",
+          "yearlySave": "$199.88"
+        }
+      ]
+    }
+  },
+  "/users": {
+    "post": {
+      "data": {
+        "status": "success",
+        "message": "User data received (mock server)"
+      }
+    }
+  }
+}

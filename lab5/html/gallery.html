@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея работ - 3DGen</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/gallery.css">
+</head>
+<body class="page">
+    <header class="header">
+        <div class="container header__container">
+            <div class="logo">
+                <h1 class="logo__title">3DGen</h1>
+                <span class="logo__subtitle">Превращаем изображения в 3D</span>
+            </div>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Главная</a></li>
+                    <li><a href="generator.html" class="nav__link">Генератор</a></li>
+                    <li><a href="gallery.html" class="nav__link nav__link--active">Галерея</a></li>
+                    <li><a href="login.html" class="nav__link nav__link--login">Войти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="gallery">
+            <div class="container">
+                <div class="gallery__header">
+                    <h2 class="gallery__title">Галерея созданных моделей</h2>
+                    <p class="gallery__description">Примеры работ, созданных с помощью нашего генератора 3D моделей</p>
+                </div>
+
+                <div class="filters">
+                    <a href="#all" class="filters__button filters__button--active">Все работы</a>
+                    <a href="#architecture" class="filters__button">Архитектура</a>
+                    <a href="#characters" class="filters__button">Персонажи</a>
+                    <a href="#objects" class="filters__button">Объекты</a>
+                    <a href="#nature" class="filters__button">Природа</a>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item gallery-item--architecture">
+                        <div class="gallery-card">
+                            <div class="gallery-card__preview">
+                                <div class="gallery-card__cube">
+                                    <div class="gallery-card__side gallery-card__side--front"></div>
+                                    <div class="gallery-card__side gallery-card__side--back"></div>
+                                    <div class="gallery-card__side gallery-card__side--left"></div>
+                                    <div class="gallery-card__side gallery-card__side--right"></div>
+                                    <div class="gallery-card__side gallery-card__side--top"></div>
+                                    <div class="gallery-card__side gallery-card__side--bottom"></div>
+                                </div>
+                            </div>
+                            <div class="gallery-card__info">
+                                <h3 class="gallery-card__title">Современный дом</h3>
+                                <p class="gallery-card__description">Архитектурная модель на основе фото</p>
+                                <div class="gallery-card__stats">
+                                    <span>🔺 2.4k полигонов</span>
+                                    <span>⏱️ 45 сек</span>
+                                </div>
+                                <a href="#" class="gallery-card__download">Скачать модель</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item gallery-item--characters">
+                        <div class="gallery-card">
+                            <div class="gallery-card__preview">
+                                <div class="gallery-card__cube gallery-card__cube--character">
+                                    <div class="gallery-card__side gallery-card__side--front"></div>
+                                    <div class="gallery-card__side gallery-card__side--back"></div>
+                                    <div class="gallery-card__side gallery-card__side--left"></div>
+                                    <div class="gallery-card__side gallery-card__side--right"></div>
+                                    <div class="gallery-card__side gallery-card__side--top"></div>
+                                    <div class="gallery-card__side gallery-card__side--bottom"></div>
+                                </div>
+                            </div>
+                            <div class="gallery-card__info">
+                                <h3 class="gallery-card__title">Стилизованный персонаж</h3>
+                                <p class="gallery-card__description">3D модель из 2D арта</p>
+                                <div class="gallery-card__stats">
+                                    <span>🔺 1.8k полигонов</span>
+                                    <span>⏱️ 38 сек</span>
+                                </div>
+                                <a href="#" class="gallery-card__download">Скачать модель</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item gallery-item--objects">
+                        <div class="gallery-card">
+                            <div class="gallery-card__preview">
+                                <div class="gallery-card__cube gallery-card__cube--object">
+                                    <div class="gallery-card__side gallery-card__side--front"></div>
+                                    <div class="gallery-card__side gallery-card__side--back"></div>
+                                    <div class="gallery-card__side gallery-card__side--left"></div>
+                                    <div class="gallery-card__side gallery-card__side--right"></div>
+                                    <div class="gallery-card__side gallery-card__side--top"></div>
+                                    <div class="gallery-card__side gallery-card__side--bottom"></div>
+                                </div>
+                            </div>
+                            <div class="gallery-card__info">
+                                <h3 class="gallery-card__title">Дизайнерский стул</h3>
+                                <p class="gallery-card__description">Мебель из фотографии</p>
+                                <div class="gallery-card__stats">
+                                    <span>🔺 3.1k полигонов</span>
+                                    <span>⏱️ 52 сек</span>
+                                </div>
+                                <a href="#" class="gallery-card__download">Скачать модель</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item gallery-item--nature">
+                        <div class="gallery-card">
+                            <div class="gallery-card__preview">
+                                <div class="gallery-card__cube gallery-card__cube--nature">
+                                    <div class="gallery-card__side gallery-card__side--front"></div>
+                                    <div class="gallery-card__side gallery-card__side--back"></div>
+                                    <div class="gallery-card__side gallery-card__side--left"></div>
+                                    <div class="gallery-card__side gallery-card__side--right"></div>
+                                    <div class="gallery-card__side gallery-card__side--top"></div>
+                                    <div class="gallery-card__side gallery-card__side--bottom"></div>
+                                </div>
+                            </div>
+                            <div class="gallery-card__info">
+                                <h3 class="gallery-card__title">Дерево</h3>
+                                <p class="gallery-card__description">Природный объект</p>
+                                <div class="gallery-card__stats">
+                                    <span>🔺 4.2k полигонов</span>
+                                    <span>⏱️ 61 сек</span>
+                                </div>
+                                <a href="#" class="gallery-card__download">Скачать модель</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item gallery-item--architecture">
+                        <div class="gallery-card">
+                            <div class="gallery-card__preview">
+                                <div class="gallery-card__cube">
+                                    <div class="gallery-card__side gallery-card__side--front"></div>
+                                    <div class="gallery-card__side gallery-card__side--back"></div>
+                                    <div class="gallery-card__side gallery-card__side--left"></div>
+                                    <div class="gallery-card__side gallery-card__side--right"></div>
+                                    <div class="gallery-card__side gallery-card__side--top"></div>
+                                    <div class="gallery-card__side gallery-card__side--bottom"></div>
+                                </div>
+                            </div>
+                            <div class="gallery-card__info">
+                                <h3 class="gallery-card__title">Небоскреб</h3>
+                                <p class="gallery-card__description">Городская архитектура</p>
+                                <div class="gallery-card__stats">
+                                    <span>🔺 5.7k полигонов</span>
+                                    <span>⏱️ 78 сек</span>
+                                </div>
+                                <a href="#" class="gallery-card__download">Скачать модель</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item gallery-item--objects">
+                        <div class="gallery-card">
+                            <div class="gallery-card__preview">
+                                <div class="gallery-card__cube gallery-card__cube--object">
+                                    <div class="gallery-card__side gallery-card__side--front"></div>
+                                    <div class="gallery-card__side gallery-card__side--back"></div>
+                                    <div class="gallery-card__side gallery-card__side--left"></div>
+                                    <div class="gallery-card__side gallery-card__side--right"></div>
+                                    <div class="gallery-card__side gallery-card__side--top"></div>
+                                    <div class="gallery-card__side gallery-card__side--bottom"></div>
+                                </div>
+                            </div>
+                            <div class="gallery-card__info">
+                                <h3 class="gallery-card__title">Автомобиль</h3>
+                                <p class="gallery-card__description">Транспортное средство</p>
+                                <div class="gallery-card__stats">
+                                    <span>🔺 6.3k полигонов</span>
+                                    <span>⏱️ 85 сек</span>
+                                </div>
+                                <a href="#" class="gallery-card__download">Скачать модель</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item gallery-item--characters">
+                        <div class="gallery-card">
+                            <div class="gallery-card__preview">
+                                <div class="gallery-card__cube gallery-card__cube--character">
+                                    <div class="gallery-card__side gallery-card__side--front"></div>
+                                    <div class="gallery-card__side gallery-card__side--back"></div>
+                                    <div class="gallery-card__side gallery-card__side--left"></div>
+                                    <div class="gallery-card__side gallery-card__side--right"></div>
+                                    <div class="gallery-card__side gallery-card__side--top"></div>
+                                    <div class="gallery-card__side gallery-card__side--bottom"></div>
+                                </div>
+                            </div>
+                            <div class="gallery-card__info">
+                                <h3 class="gallery-card__title">Фэнтези персонаж</h3>
+                                <p class="gallery-card__description">Модель для игр</p>
+                                <div class="gallery-card__stats">
+                                    <span>🔺 7.2k полигонов</span>
+                                    <span>⏱️ 92 сек</span>
+                                </div>
+                                <a href="#" class="gallery-card__download">Скачать модель</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item gallery-item--nature">
+                        <div class="gallery-card">
+                            <div class="gallery-card__preview">
+                                <div class="gallery-card__cube gallery-card__cube--nature">
+                                    <div class="gallery-card__side gallery-card__side--front"></div>
+                                    <div class="gallery-card__side gallery-card__side--back"></div>
+                                    <div class="gallery-card__side gallery-card__side--left"></div>
+                                    <div class="gallery-card__side gallery-card__side--right"></div>
+                                    <div class="gallery-card__side gallery-card__side--top"></div>
+                                    <div class="gallery-card__side gallery-card__side--bottom"></div>
+                                </div>
+                            </div>
+                            <div class="gallery-card__info">
+                                <h3 class="gallery-card__title">Горный пейзаж</h3>
+                                <p class="gallery-card__description">Ландшафтная модель</p>
+                                <div class="gallery-card__stats">
+                                    <span>🔺 8.1k полигонов</span>
+                                    <span>⏱️ 105 сек</span>
+                                </div>
+                                <a href="#" class="gallery-card__download">Скачать модель</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta">
+                    <h3 class="cta__title">Вдохновились?</h3>
+                    <p class="cta__description">Создайте свою уникальную 3D модель прямо сейчас</p>
+                    <a href="generator.html" class="btn btn--primary">Начать создание</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer-logo">
+                    <h3 class="footer__logo-title">3DGen</h3>
+                    <p class="footer__logo-description">Генератор 3D моделей на основе нейросетей</p>
+                </div>
+                <div class="footer__links">
+                    <a href="gallery.html" class="footer__link">Галерея</a>
+                    <a href="login.html" class="footer__link">Войти</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>Делаем Диплом. 2025. Жиляев Максим. ДЕЛАЕМ ДЕЛАЕМ КОГДА НЕ ДЕЛАЛИ</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

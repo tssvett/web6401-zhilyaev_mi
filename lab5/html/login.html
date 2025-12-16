@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход - 3DGen</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body class="page">
+    <header class="header">
+        <div class="container header__container">
+            <div class="logo">
+                <h1 class="logo__title">3DGen</h1>
+                <span class="logo__subtitle">Превращаем изображения в 3D</span>
+            </div>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Главная</a></li>
+                    <li><a href="generator.html" class="nav__link">Генератор</a></li>
+                    <li><a href="gallery.html" class="nav__link">Галерея</a></li>
+                    <li><a href="login.html" class="nav__link nav__link--login nav__link--active">Войти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="login">
+            <div class="container">
+                <div class="login__container">
+                    <div class="login-form">
+                        <div class="login-form__header">
+                            <h2 class="login-form__title">Вход в систему</h2>
+                            <p class="login-form__subtitle">Введите ваши учетные данные</p>
+                        </div>
+
+                        <form class="login-form__form" id="loginForm">
+                            <div class="form-group">
+                                <label for="email" class="form-group__label">Email адрес</label>
+                                <input type="email" id="email" name="email" class="form-group__input" placeholder="your@email.com" required>
+                                <div class="form-hint" id="emailHint"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="password" class="form-group__label">Пароль</label>
+                                <input type="password" id="password" name="password" class="form-group__input" placeholder="Введите ваш пароль" required>
+                                <div class="form-hint" id="passwordHint"></div>
+                            </div>
+
+                            <div class="form-options">
+                                <label class="checkbox">
+                                    <input type="checkbox" name="remember" class="checkbox__input">
+                                    <span class="checkbox__checkmark"></span>
+                                    Запомнить меня
+                                </label>
+                                <a href="#" class="link link--forgot">Забыли пароль?</a>
+                            </div>
+
+                            <button type="submit" class="btn btn--primary btn--full">
+                                Войти в аккаунт
+                            </button>
+                        </form>
+
+                        <div class="login-form__footer">
+                            <p>Еще нет аккаунта? <a href="register.html" class="link link--register">Зарегистрироваться</a></p>
+                        </div>
+                    </div>
+
+                    <div class="login-benefits">
+                        <div class="benefits-list">
+                            <h3 class="login-benefits__title">Преимущества авторизации</h3>
+                            <div class="login-benefits__item">
+                                <div class="login-benefits__icon">☠︎</div>
+                                <div class="login-benefits__text">
+                                    <h4 class="login-benefits__text-title">Вы знаете кто вы!</h4>
+                                    <p class="login-benefits__text-description">И зачем это нужно?</p>
+                                </div>
+                            </div>
+                            <div class="login-benefits__item">
+                                <div class="login-benefits__icon">🛠️</div>
+                                <div class="login-benefits__text">
+                                    <h4 class="login-benefits__text-title">Генератор работает</h4>
+                                    <p class="login-benefits__text-description">Я серьезно, без авторизации не работает</p>
+                                </div>
+                            </div>
+                            <div class="login-benefits__item">
+                                <div class="login-benefits__icon">🎁</div>
+                                <div class="login-benefits__text">
+                                    <h4 class="login-benefits__text-title">Жиляев Максим обворует вас БЕСПЛАТНО!</h4>
+                                    <p class="login-benefits__text-description">Персональная инфа бесплатной не бывает</p>
+                                </div>
+                            </div>
+                            <div class="login-benefits__item">
+                                <div class="login-benefits__icon">🚨</div>
+                                <div class="login-benefits__text">
+                                    <h4 class="login-benefits__text-title">Регистрируетесь только ОДИН РАЗ!</h4>
+                                    <p class="login-benefits__text-description">Да, вы не ослышались</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer-logo">
+                    <h3 class="footer__logo-title">3DGen</h3>
+                    <p class="footer__logo-description">Генератор 3D моделей на основе нейросетей</p>
+                </div>
+                <div class="footer__links">
+                    <a href="gallery.html" class="footer__link">Галерея</a>
+                    <a href="login.html" class="footer__link">Войти</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>Делаем Диплом. 2025. Жиляев Максим. ДЕЛАЕМ ДЕЛАЕМ КОГДА НЕ ДЕЛАЛИ</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/UserLogin.js"></script>
+    <script src="../js/utils/notifications.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+</html>
