@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3DGen - Генератор 3D моделей</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="page">
+    <header class="header">
+        <div class="container header__container">
+            <div class="logo">
+                <h1 class="logo__title">3DGen</h1>
+                <span class="logo__subtitle">Превращаем изображения в 3D</span>
+            </div>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link nav__link--active">Главная</a></li>
+                    <li><a href="generator.html" class="nav__link">Генератор</a></li>
+                    <li><a href="gallery.html" class="nav__link">Галерея</a></li>
+                    <li><a href="login.html" class="nav__link nav__link--login">Войти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <h2 class="hero__title">Превратите ваши 2D изображения в 3D модели</h2>
+                    <p class="hero__description">Используйте нейросетевые алгоритмы для создания трехмерных моделей в один клик</p>
+                    <div class="hero__buttons">
+                        <a href="generator.html" class="btn btn--primary">Начать генерацию</a>
+                        <a href="gallery.html" class="btn btn--secondary">Смотреть примеры</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="cube-animation">
+                        <div class="cube-animation__cube">
+                            <div class="cube-animation__face cube-animation__face--front"></div>
+                            <div class="cube-animation__face cube-animation__face--back"></div>
+                            <div class="cube-animation__face cube-animation__face--left"></div>
+                            <div class="cube-animation__face cube-animation__face--right"></div>
+                            <div class="cube-animation__face cube-animation__face--top"></div>
+                            <div class="cube-animation__face cube-animation__face--bottom"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2 class="features__title">Почему выбирают 3DGen?</h2>
+                <div class="features__grid">
+                    <div class="features__card">
+                        <div class="features__icon">⚡</div>
+                        <h3 class="features__card-title">Быстрая генерация</h3>
+                        <p class="features__card-description">Получите 3D модель всего за несколько минут</p>
+                    </div>
+                    <div class="features__card">
+                        <div class="features__icon">🎯</div>
+                        <h3 class="features__card-title">Высокая точность</h3>
+                        <p class="features__card-description">Нейросеть точно воссоздает геометрию объектов</p>
+                    </div>
+                    <div class="features__card">
+                        <div class="features__icon">🔄</div>
+                        <h3 class="features__card-title">Простой интерфейс</h3>
+                        <p class="features__card-description">Drag-and-drop загрузка и интуитивное управление</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="steps">
+            <div class="container">
+                <h2 class="steps__title">Как это работает?</h2>
+                <div class="steps__grid">
+                    <div class="steps__item">
+                        <div class="steps__number">1</div>
+                        <h3 class="steps__item-title">Загрузите изображение</h3>
+                        <p class="steps__item-description">Перетащите 2D изображение в специальную область</p>
+                    </div>
+                    <div class="steps__item">
+                        <div class="steps__number">2</div>
+                        <h3 class="steps__item-title">Обработка нейросетью</h3>
+                        <p class="steps__item-description">Наш алгоритм анализирует изображение и создает 3D модель</p>
+                    </div>
+                    <div class="steps__item">
+                        <div class="steps__number">3</div>
+                        <h3 class="steps__item-title">Получите результат</h3>
+                        <p class="steps__item-description">Скачайте готовую модель в формате OBJ</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="comparison">
+            <div class="container">
+                <h2 class="comparison__title">Сравнение тарифных планов</h2>
+                <p class="comparison__description">
+                    Выберите подходящий вариант для ваших потребностей в создании 3D моделей
+                </p>
+                
+                <table class="comparison__table">
+                    <thead>
+                        <tr>
+                            <th class="comparison__table-header text--left">Функция / Тариф</th>
+                            <th class="comparison__table-header text--center">Бесплатный</th>
+                            <th class="comparison__table-header text--center">Про</th>
+                            <th class="comparison__table-header text--center">Премиум</th>
+                            <th class="comparison__table-header text--center">Бизнес</th>
+                        </tr>
+                    </thead>
+                    <tbody id="plans-table-body">
+                        <!-- Данные будут загружаться через JavaScript -->
+                        <tr>
+                            <td colspan="5" class="comparison__table-cell text--center">Загрузка данных...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer-logo">
+                    <h3 class="footer__logo-title">3DGen</h3>
+                    <p class="footer__logo-description">Генератор 3D моделей на основе нейросетей</p>
+                </div>
+                <div class="footer__links">
+                    <a href="gallery.html" class="footer__link">Галерея</a>
+                    <a href="login.html" class="footer__link">Войти</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>Делаем Диплом. 2025. Жиляев Максим. ДЕЛАЕМ ДЕЛАЕМ КОГДА НЕ ДЕЛАЛИ</p>
+            </div>
+        </div>
+    </footer>
+    
+<script src="../js/utils/notifications.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
